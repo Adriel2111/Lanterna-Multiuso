@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:padding="16dp">
+
+    <!-- Botão de Iniciar Jogo -->
+    <Button
+        android:id="@+id/button_start_game"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Iniciar Jogo"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <!-- Botão de Reiniciar Jogo -->
+    <Button
+        android:id="@+id/button_restart_game"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reiniciar Jogo"
+        android:layout_below="@+id/button_start_game"
+        android:layout_centerHorizontal="true"
+        android:enabled="false" />
+
+    <!-- Pontuação -->
+    <TextView
+        android:id="@+id/textView_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pontuação: 0"
+        android:textSize="24sp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/design_default_color_error"
+        android:layout_below="@+id/button_mark"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Botão de Marcar Pontos -->
+    <Button
+        android:id="@+id/button_mark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Marcar Pontos"
+        android:layout_centerInParent="true"
+        android:background="@android:color/darker_gray" />
+
+    <!-- Botão de Mostrar Regras -->
+    <Button
+        android:id="@+id/button_show_rules"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Regras"
+        android:layout_above="@+id/button_return"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Botão de Voltar -->
+    <Button
+        android:id="@+id/button_return"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Voltar"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <!-- Dialog de Regras -->
+    <RelativeLayout
+        android:id="@+id/dialog_rules"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:background="#1AE322"
+        android:padding="20dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/textView_rules_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Pressione o botão Marcar Pontos quando a lanterna ligar para fazer 10 pontos. Se clicar com ela desligada, o jogo acaba! Se deixar ela piscar e você não pressionar a tempo, perde 10 pontos e uma das 5 vidas!"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/button_close_rules"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView_rules_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:text="Fechar" />
+    </RelativeLayout>
+
+</RelativeLayout>

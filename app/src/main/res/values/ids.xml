@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="manual_text_view" type="id" />
+    <item name="button_back" type="id" />
+    <item name="other_button" type="id" />
+    <item name="textView_high_scores" type="id" />
+</resources>
